@@ -1,6 +1,23 @@
 # VP-Final-Project
 
-Code
--DCAE (original)
--MethodA(spatial)
--MethodB(spatial+channel)
+This repository contains the final project for a **Video Processing** course.  
+The project focuses on **learned image compression** and investigates improved entropy modeling strategies based on the DCAE framework.
+
+
+## Method Description
+
+- **DCAE (Baseline)**  
+  The original Deep Contextual Autoencoder for learned image compression, used as the baseline for comparison.
+
+- **MethodA (Spatial Context)**  
+  Extends the entropy model by improving spatial context modeling to better capture local spatial dependencies in latent representations.
+
+- **MethodB (Spatial + Channel Context)**  
+  Builds upon MethodA by explicitly modeling inter-slice channel dependencies using RWKV-based linear attention, enabling efficient long-range dependency modeling with linear complexity.
+
+## Notes
+
+- All methods are trained and evaluated under consistent experimental settings for fair comparison.
+- The project emphasizes architectural understanding and experimental analysis rather than large-scale training.
+- This repository is intended for **academic and educational purposes** as a course final project.
+
