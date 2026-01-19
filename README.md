@@ -9,8 +9,8 @@ The project focuses on **learned image compression** and investigates improved e
 - **DCAE (Baseline)**  
   The original Deep Contextual Autoencoder for learned image compression, used as the baseline for comparison.
 
-- **MethodA (Spatial Context)**  
-  Extends the entropy model by improving spatial context modeling to better capture local spatial dependencies in latent representations.
+- **MethodA (Channel Context)**  
+  Extends the entropy model by improving channel context modeling to better capture global spatial dependencies in latent representations.
 
 - **MethodB (Spatial + Channel Context)**  
   Builds upon MethodA by explicitly modeling inter-slice channel dependencies using RWKV-based linear attention, enabling efficient long-range dependency modeling with linear complexity.
